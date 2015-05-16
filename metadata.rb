@@ -1,6 +1,6 @@
 name 'd-base'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Dayne Broderson'
+maintainer_email 'broderson@gmail.com'
 license 'all_rights'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
