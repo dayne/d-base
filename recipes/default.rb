@@ -14,3 +14,4 @@ if node['platform'] != "raspbian"
 end
 
 include_recipe 'd-base::_resolver'
+include_recipe 'd-base::_package'
