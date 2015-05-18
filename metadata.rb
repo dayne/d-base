@@ -7,3 +7,4 @@ long_description 'Installs/Configures d-base'
 version '0.1.0'
 
 depends 'chef-client'
+depends 'resolver', '~> 1.3.0'
