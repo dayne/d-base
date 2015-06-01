@@ -6,6 +6,8 @@
 
 #include_recipe "chef-client"
 
+include_recipe 'apt::default'
+
 include_recipe 'chef-client::config'
 include_recipe 'chef-client::service'
 
@@ -15,3 +17,4 @@ end
 
 include_recipe 'd-base::_resolver'
 include_recipe 'd-base::_packages'
+

@@ -1,4 +1,5 @@
 # d-base
 
-TODO: Enter the cookbook description here.
+Dayne's Chef Organization Base repo.  This is a starting location for all the Chef'ed systems I use for personal use.
+
 
