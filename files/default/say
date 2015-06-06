@@ -12,8 +12,8 @@ INPUT=$*
 STRINGNUM=0
  
 ary=($INPUT)
-# give visible credit every 20 or to Dan
-if [ $(( ( RANDOM % 20 ) )) == 0 ]; then
+# give visible credit every 50 or to Dan
+if [ $(( ( RANDOM % 50 ) )) == 0 ]; then
   echo "---------------------------"
   echo "Speech Script by Dan Fountain"
   echo "TalkToDanF@gmail.com"
