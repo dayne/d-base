@@ -17,5 +17,3 @@ end
 
 include_recipe 'd-base::_resolver'
 include_recipe 'd-base::_packages'
-
-%w{ mplayer mpg123 tmux tree }.each {|p| package p}
