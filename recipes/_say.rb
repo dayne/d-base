@@ -3,5 +3,5 @@ cookbook_file "say" do
   group 'root'
   mode '0755'
   path "/usr/local/bin/say"
-  action :create_if_missing
+  action :create
 end

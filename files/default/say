@@ -12,10 +12,13 @@ INPUT=$*
 STRINGNUM=0
  
 ary=($INPUT)
-echo "---------------------------"
-echo "Speech Script by Dan Fountain"
-echo "TalkToDanF@gmail.com"
-echo "---------------------------"
+# give visible credit every 20 or to Dan
+if [ $(( ( RANDOM % 20 ) )) == 0 ]; then
+  echo "---------------------------"
+  echo "Speech Script by Dan Fountain"
+  echo "TalkToDanF@gmail.com"
+  echo "---------------------------"
+fi
 for key in "${!ary[@]}" 
   do
     SHORTTMP[$STRINGNUM]="${SHORTTMP[$STRINGNUM]} ${ary[$key]}"
