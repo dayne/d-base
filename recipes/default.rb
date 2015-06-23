@@ -11,7 +11,7 @@ include_recipe 'apt::default'
 include_recipe 'chef-client::config'
 include_recipe 'chef-client::service'
 
-if node['platform'] != "raspbian"
+if node['platform'] == "raspbian"
  include_recipe 'd-base::_pi'
 end
 
