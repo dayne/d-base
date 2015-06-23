@@ -12,7 +12,7 @@ include_recipe 'chef-client::config'
 include_recipe 'chef-client::service'
 
 if node['platform'] != "raspbian"
- # include_recipe 'd.pi-cookbook'
+ include_recipe 'd-base::_pi'
 end
 
 include_recipe 'd-base::_resolver'
