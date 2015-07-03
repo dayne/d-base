@@ -4,16 +4,9 @@
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
-#include_recipe "chef-client"
-
-include_recipe 'apt::default'
-
-include_recipe 'chef-client::config'
-include_recipe 'chef-client::service'
+include_recipe 'd-base::_common'
 
 if node['platform'] == "raspbian"
  include_recipe 'd-base::_pi'
 end
 
-include_recipe 'd-base::_resolver'
-include_recipe 'd-base::_packages'

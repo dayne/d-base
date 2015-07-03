@@ -1,5 +1,11 @@
 override['chef_client']['init_style'] = 'init'
 
-default['n1nj4net']['packages']['raspbian'] = [
-  'dnsutils', 'mpg123', 'mplayer'
-]
+default['packages'] = {
+  "smartmontools" => 'install',
+  "xfsprogs"      => 'install',
+  "mdadm"         => 'install',
+  "gdisk"         => 'install',
+  "curl"          => 'install',
+  "tree"          => 'install',
+  "tmux"          => 'install'
+}
