@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.1.13'
+version '0.1.14'
 
 depends 'chef-client', '~> 4.3.0'
 depends 'resolver', '~> 1.3.0'

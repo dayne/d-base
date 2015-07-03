@@ -11,6 +11,4 @@ node.default['packages'].merge!( {
   'dnsutils'  => 'install', 
   'mpg123'    => 'install',
   'mplayer'   => 'install'
-}
-
-include_recipe 'packages::default'
+})
