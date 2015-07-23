@@ -17,13 +17,14 @@ end
 include_recipe 'd-base::_say'
 
 node.default['packages'].merge!( {
-  'mplayer'   => 'install',
-  'git-core'  => 'install',
+  'mplayer'    => 'install',
+  'git-core'   => 'install',
   'build-essential' => 'install',
   'libi2c-dev' => 'install',  # for WiringPi libraryies
-  'node' => 'install',
-  'nodejs' => 'install',
-  'wiringpi' => 'isntall'
+  'node'       => 'install',
+  'nodejs'     => 'install',
+  'wiringpi'   => 'install',
+  'python-dev' => 'install',
+  'python-pip' => 'install',
+  'bison'      => 'install'
 })
-
-

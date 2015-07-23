@@ -8,3 +8,5 @@ include_recipe 'd-base::_common'
 if node['platform'] == "raspbian"
  include_recipe 'd-base::_pi'
 end
+
+timezone 'America/Anchorage'
