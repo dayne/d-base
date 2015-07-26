@@ -9,3 +9,5 @@ default['packages'] = {
   "tree"          => 'install',
   "tmux"          => 'install'
 }
+
+default['system']['timezone'] = 'America/Anchorage'
