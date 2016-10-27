@@ -17,3 +17,4 @@ depends 'bash-CVE-2014-7169'
 depends 'system', '~> 0.11.2'
 
 depends 'steam', '~> 2.2.1'
+depends 'atom', '~> 0.2.0'

@@ -22,3 +22,9 @@ node.default['packages-cookbook'].each do |p|
 end
 
 #include_recipe 'packages::default'
+
+# 
+include_recipe 'atom'
+
+atom_apm 'atom-terminal'
+atom_apm 'zen'
