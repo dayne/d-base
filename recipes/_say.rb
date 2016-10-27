@@ -6,6 +6,4 @@ cookbook_file "say" do
   action :create
 end
 
-node.default['packages'].merge!( {
-    'mpg123'    => 'install'
-})
+package 'mpg123'
