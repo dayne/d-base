@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.2.11'
+version '0.2.14'
 
 depends 'chef-client' , '~> 6.0.0'
 depends 'resolver' , '~> 2.0.0'
@@ -18,3 +18,5 @@ depends 'system', '~> 0.11.2'
 
 depends 'steam', '~> 2.2.1'
 depends 'atom', '~> 0.2.0'
+
+depends 'chef-dk', '~> 3.1.0'
