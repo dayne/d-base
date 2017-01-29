@@ -4,22 +4,9 @@ steam_app 'default' do
     action :install
 end
 
-[
-    'build-essential',
-    'chromium-browser',
-    'tilda',
-    'zsh',
-    'zsh-antigen',
-    'vim',
-    'mumble'
-    #  'node'
-    #  'nodejs'
-    #  'python-dev'
-    #  'python-pip'
-    #  'bison'
-]. each do |p|
-  package(p)
-end
+packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
+              vim mumble awscli)
+package packages
 
 #include_recipe 'packages::default'
 include_recipe 'atom'
@@ -40,8 +27,12 @@ end
 
 include_recipe 'minecraft-installer-ubuntu'
 
-# https://releases.hashicorp.com/terraform/0.8.4/
-node['terraform']['version'] = '0.8.5'
-# https://releases.hashicorp.com/terraform/0.8.4/terraform_0.8.4_SHA256SUMS
-#node['terraform']['checksum'] = '297d35d0b4311445cd87ef032d3dec917bcc7a8b163ead28a4c45d966a2f75cc'
+node.default['terraform']['version'] = '0.8.5'
 include_recipe 'terraform'
+
+include_recipe 'virtualbox'
+
+node.default['vagrant']['version'] = '1.9.1'
+include_recipe 'vagrant'
+
+hab_install 'install habitat'
