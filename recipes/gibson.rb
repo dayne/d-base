@@ -19,9 +19,6 @@ chef_dk 'default' do
   global_shell_init true
   version '1.1.16'
   action :install
-
-  #not_if '/opt/chefdk/bin/chef --version | grep 0.19.6'
-  #not_if "/opt/chefdk/bin/chef --version | grep #{node['chef_dk']['version']}"
   not_if "/opt/chefdk/bin/chef --version | grep #{version}"
 end
 
