@@ -17,7 +17,7 @@ atom_apm 'vim-mode-plus'
 
 chef_dk 'default' do
   global_shell_init true
-  version '1.1.16'
+  version '1.2.20'
   action :install
   not_if "/opt/chefdk/bin/chef --version | grep #{version}"
 end
