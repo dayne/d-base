@@ -1,5 +1,10 @@
 node.default['chef_client']['init_style'] = 'systemd'
 
+apt_update 'system' do
+  action :periodic
+  frequency 86400
+end if debian?
+
 steam_app 'default' do
     action :install
 end
