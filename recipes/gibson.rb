@@ -15,6 +15,8 @@ include_recipe 'atom'
 atom_apm 'atom-terminal'
 atom_apm 'zen'
 atom_apm 'vim-mode-plus'
+atom_apm 'file-watcher'
+atom_apm 'file-icons'
 
 chef_dk 'default' do
   global_shell_init true
