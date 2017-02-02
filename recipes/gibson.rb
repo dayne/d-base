@@ -1,6 +1,12 @@
 node.default['chef_client']['init_style'] = 'systemd'
 
+apt_update 'system' do
+  action :periodic
+  frequency 86400
+end if debian?
+
 include_recipe 'steam'
+
 #steam_app 'default' do
 #    action :install
 #end
@@ -20,7 +26,7 @@ atom_apm 'file-icons'
 
 chef_dk 'default' do
   global_shell_init true
-  version '1.1.16'
+  version '1.2.20'
   action :install
   not_if "/opt/chefdk/bin/chef --version | grep #{version}"
 end
