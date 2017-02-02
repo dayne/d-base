@@ -36,6 +36,7 @@ include_recipe 'vagrant'
 hab_install 'install habitat'
 
 =begin
+# stupid dependancies needed
 remote_file '/tmp/slack-desktop-2.4.2-amd64.deb' do
   source 'https://downloads.slack-edge.com/linux_releases/slack-desktop-2.4.2-amd64.deb'
   checksum 'f6c81686eaf4bcc73b0b889d69fa6028efdc86b6a28949594b2f5f0d5a2fc4b1'
