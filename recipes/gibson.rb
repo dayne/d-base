@@ -6,9 +6,10 @@ apt_update 'system' do
 end if debian?
 
 include_recipe 'steam'
-steam_app 'default' do
-    action :install
-end
+
+#steam_app 'default' do
+#    action :install
+#end
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
               vim mumble awscli)
