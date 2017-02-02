@@ -51,4 +51,9 @@ describe command('/opt/chefdk/bin/chef --version') do
   its('stderr') { should match '' }
 end
 
+#describe package('slack-desktop') do
+#  it { should be_installed }
+#end
+
 # TODO verify minecraft
+# TODO verify VNC viewer
