@@ -10,6 +10,7 @@ provisioner:
 
 platforms:
   - name: ubuntu-16.04
+  - name: debian-8.5
 #  - name: centos-7.1
 
 suites:
@@ -17,4 +18,13 @@ suites:
     run_list:
       - recipe[d-base::default]
       - recipe[d-base::gibson]
+    excludes:
+      - debian-8.5
     attributes:
+  - name: pi
+    run_list:
+      - recipe[d-base::default]
+      - recipe[d-base::pi]
+    attributes:
+    excludes:
+      - ubuntu-16.04
