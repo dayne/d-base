@@ -4,10 +4,9 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-%{ libicu-dev }.each do |p|
-    package p
+%( libicu-dev ).each do |p|
+  package p
 end
-
 
 # http://www.airspayce.com/mikem/bcm2835/
 # version = 1.50
@@ -15,7 +14,6 @@ end
 # http://www.airspayce.com/mikem/bcm2835/bcm2835-1.50.tar.gz
 # ./configure ; make ; make install
 # WARNING Doxygen not found # documentation engine so no matter
-
 
 ####################################################################################
 # FAIL: { nodered npm }.each do |p|

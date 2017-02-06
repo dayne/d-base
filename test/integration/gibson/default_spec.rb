@@ -8,7 +8,7 @@
 unless os.windows?
   describe user('root') do
     it { should exist }
-    #skip 'This is an example test, replace with your own test.'
+    # skip 'This is an example test, replace with your own test.'
   end
 end
 
@@ -30,13 +30,13 @@ end
 describe command('aws --version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match 'aws-cli' }
-  its('stderr') { should eq ''}
+  its('stderr') { should eq '' }
 end
 
 describe command('hab --version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match 'hab ' }
-  its('stderr') { should eq ''}
+  its('stderr') { should eq '' }
 end
 
 describe command('virtualbox --help') do

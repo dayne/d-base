@@ -1,15 +1,15 @@
-#override['chef_client']['init_style'] = 'init'
+# override['chef_client']['init_style'] = 'init'
 
 default['packages-cookbook'] = [
-  "smartmontools",
-  "xfsprogs",
-  "mdadm",
-  "gdisk",
-  "curl",
-  "tree",
-  "tmux",
+  'smartmontools',
+  'xfsprogs',
+  'mdadm',
+  'gdisk',
+  'curl',
+  'tree',
+  'tmux',
   'mplayer',
-  'git-core'
+  'git-core',
 ]
 
 default['system']['timezone'] = 'America/Anchorage'

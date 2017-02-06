@@ -12,10 +12,9 @@ packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
 
 #  kicad
 
-
 package packages
 
-#include_recipe 'packages::default'
+# include_recipe 'packages::default'
 
 include_recipe 'atom'
 
