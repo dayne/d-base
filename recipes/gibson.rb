@@ -9,6 +9,10 @@ include_recipe 'steam'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
               vim mumble awscli)
+
+#  kicad
+
+
 package packages
 
 #include_recipe 'packages::default'
@@ -39,3 +43,5 @@ node.default['vagrant']['version'] = '1.9.1'
 include_recipe 'vagrant'
 
 hab_install 'install habitat'
+
+include_recipe 'qgis'

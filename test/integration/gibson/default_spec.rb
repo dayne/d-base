@@ -51,4 +51,11 @@ describe command('/opt/chefdk/bin/chef --version') do
   its('stderr') { should match '' }
 end
 
-# TODO verify minecraft
+describe package('qgis') do
+  it { should be_installed }
+  its('version') { should be >= '1:2.18' }
+end
+
+describe file('/usr/share/minecraft/minecraft.jar') do
+  it { should exist }
+end
