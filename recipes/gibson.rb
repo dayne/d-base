@@ -26,7 +26,7 @@ atom_apm 'file-icons'
 
 chef_dk 'default' do
   global_shell_init true
-  version '1.2.20'
+  version '1.2.22'
   action :install
   not_if "/opt/chefdk/bin/chef --version | grep #{version}"
 end
