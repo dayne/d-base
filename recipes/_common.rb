@@ -10,4 +10,9 @@ unless centos? && (node['platform_version'].to_f >= 7)
   include_recipe 'bash-CVE-2014-6271'
 end
 
+apt_update 'system' do
+  action :periodic
+  frequency 86400
+end if debian?
+
 include_recipe 'packages'
