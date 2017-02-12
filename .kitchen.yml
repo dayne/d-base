@@ -29,7 +29,6 @@ suites:
       - ubuntu-16.10
   - name: chefdk
     run_list:
-      - recipe[d-base::default]
       - recipe[d-base::chefdk]
     excludes:
       - debian-8.5

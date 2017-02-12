@@ -15,6 +15,5 @@ default['packages-cookbook'] = [
 default['system']['timezone'] = 'America/Anchorage'
 
 default['chef_dk']['version'] = '1.2.22'
-default['habitat']['version'] = '0.16.0'
 default['vagrant']['version'] = '1.9.1'
 default['terraform']['version'] = '0.8.6'

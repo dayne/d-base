@@ -21,9 +21,7 @@ include_recipe 'virtualbox'
 include_recipe 'vagrant'
 vagrant_plugin 'vagrant-winrm'
 
-hab_install 'install habitat' do
-  version node['habitat']['version']
-end
+hab_install 'install habitat'
 
 include_recipe 'terraform'
 
