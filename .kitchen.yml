@@ -9,14 +9,13 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-16.04
+  - name: ubuntu-16.10
   - name: debian-8.5
 #  - name: centos-7.1
 
 suites:
   - name: gibson
     run_list:
-      - recipe[d-base::default]
       - recipe[d-base::gibson]
     excludes:
       - debian-8.5
@@ -27,4 +26,4 @@ suites:
       - recipe[d-base::pi]
     attributes:
     excludes:
-      - ubuntu-16.04
+      - ubuntu-16.10
