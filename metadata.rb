@@ -19,16 +19,19 @@ depends 'bash-CVE-2014-6271'
 
 depends 'system', '~> 0.11.2'
 
-depends 'steam', '~> 2.2.1'
-depends 'atom', '~> 0.2.0'
-
+# chefdk related
 depends 'chef-dk', '~> 3.1.0'
-depends 'minecraft-installer-ubuntu', '~> 0.3.0'
-depends 'terraform', '~> 1.0'
+depends 'atom', '~> 0.2.0'
 depends 'vagrant'
-depends 'virtualbox', '~> 2.0'
 depends 'habitat', '~> 0.2.0'
+# note: following have special branches to work - See Berksfile
+depends 'virtualbox', '~> 2.0'
+depends 'terraform', '~> 1.0'
+
+# misc for gibson
+depends 'steam', '~> 2.2.1'
 depends 'qgis', '~> 0.3.0'
+depends 'minecraft-installer-ubuntu', '~> 0.3.0'
 
 #depends 'users', '~> 4.0.3'
 #depends 'user'

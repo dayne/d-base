@@ -18,3 +18,8 @@ include_recipe 'd-base::_gitkraken'
 include_recipe 'qgis'
 
 include_recipe 'steam'
+
+# gibson special atom plugins
+atom_apm 'atom-terminal'
+atom_apm 'zen'
+atom_apm 'vim-mode-plus'

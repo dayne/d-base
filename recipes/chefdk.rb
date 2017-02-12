@@ -2,13 +2,10 @@
 # Cookbook:: d-base
 # Recipe:: chefdk
 #
-# Copyright:: 2017, The Authors, All Rights Reserved.
+# Copyright:: 2017, The Authors, Do what you want - MIT License
 
 include_recipe 'atom'
 
-atom_apm 'atom-terminal'
-atom_apm 'zen'
-atom_apm 'vim-mode-plus'
 atom_apm 'file-watcher'
 atom_apm 'file-icons'
 
