@@ -1,0 +1,5 @@
+{
+    "id": "admin",
+    "groups": [ "pi", "sysadmin", "home" ],
+    "ssh_keys": ["admin-ssh-key"]
+}

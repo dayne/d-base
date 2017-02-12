@@ -1,0 +1,6 @@
+{
+    "id": "olduser",
+    "groups": [ "pi", "sysadmin", "home" ],
+    "ssh_keys": ["olduser-ssh-key"],
+    "action": [ "remove" ]
+}

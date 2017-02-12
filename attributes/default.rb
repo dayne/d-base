@@ -14,4 +14,4 @@ default['packages-cookbook'] = [
 
 default['system']['timezone'] = 'America/Anchorage'
 
-default['chef_dk']['version'] = '0.19.6'
+default['chef_dk']['version'] = '1.2.22'

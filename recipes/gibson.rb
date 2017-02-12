@@ -8,7 +8,7 @@ end if debian?
 include_recipe 'steam'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
-              vim mumble awscli)
+              vim mumble awscli giggle gitg weechat)
 
 #  kicad
 
@@ -40,7 +40,30 @@ include_recipe 'virtualbox'
 
 node.default['vagrant']['version'] = '1.9.1'
 include_recipe 'vagrant'
+#TODO: vagrant plugin install vagrant-winrm
 
 hab_install 'install habitat'
+
+#TODO: packer
+
+# gitkraken
+# https://support.gitkraken.com/release-notes/current
+
+node.default['gitkraken']['url'] = 'https://release.gitkraken.com/linux/gitkraken-amd64.deb'
+node.default['gitkraken']['version'] = '2.0.1'
+node.default['gitkraken']['checksum'] = '14afeded24a4e0b2737c0d60917c3965f6cccd4b58c1934e9c45b4a65a7ca5ac'
+
+remote_file ('/tmp/gitkraken-amd64.deb') do
+  source node.default['gitkraken']['url']
+  owner 'root'
+  checksum node.default['gitkraken']['checksum']
+end
+
+dpkg_package 'gitkraken' do
+  only_if { File.exist?('/tmp/gitkraken-amd64.deb')}
+  source '/tmp/gitkraken-amd64.deb'
+  action [ :install ]
+end
+
 
 include_recipe 'qgis'

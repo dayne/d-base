@@ -17,7 +17,7 @@ describe port(80) do
   skip 'This is an example test, replace with your own test.'
 end
 
-%w(vagrant vim tilda mumble atom chromium-browser).each do |pkg|
+%w(vagrant vim tilda mumble atom chromium-browser gitkraken weechat).each do |pkg|
   describe package(pkg) do
     it { should be_installed }
   end
@@ -37,6 +37,10 @@ describe command('hab --version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match 'hab ' }
   its('stderr') { should eq '' }
+end
+
+describe package('VirtualBox-5.1') do
+  it { should be_installed }
 end
 
 describe command('virtualbox --help') do

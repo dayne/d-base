@@ -1,0 +1,5 @@
+{
+    "id": "outside",
+    "groups": [ "pi" ],
+    "ssh_keys": ["outside-ssh-key"]
+}
