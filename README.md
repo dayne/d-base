@@ -23,3 +23,17 @@ d-base has the following recipes:
   * tweaks to all pi's in my life
     * US Keyboard layout instead of UK
     * capslock becomes control key
+
+#### Test Kitchen
+
+Three test suites defined for test kitchen: `gibson` and `pi`.
+* `gibson` is to test the bulk of the stuff here: default,gibson,chefdk, and others work fine in Ubuntu-16.10.  Takes a bit to converge
+* `pi` is a basic sanity checker pi related stuff using debian instead of Ubuntu.
+* `chefdk` focuses on the chefdk stack is converging and verifying cleanly. A bit quicker than gibson to converge.
+
+Inspec tests try to verify the bulk of actions done. If you've got a sane chef development workstation (see `chefdk` recipe in this repo)- then you can sanity check things converge and verify by doing:
+
+```
+    kitchen converge
+    kitchen verify
+```
