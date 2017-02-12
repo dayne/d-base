@@ -15,6 +15,6 @@ include_recipe 'd-base::chefdk'
 
 include_recipe 'd-base::_gitkraken'
 
-include_recipe 'd-base::qgis'
+include_recipe 'qgis'
 
 include_recipe 'steam'
