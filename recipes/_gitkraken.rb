@@ -15,5 +15,5 @@ end
 dpkg_package 'gitkraken' do
   only_if { File.exist?('/tmp/gitkraken-amd64-2.1.0.deb')}
   source '/tmp/gitkraken-amd64-2.1.0.deb'
-  action [ :install ]
+  action [ :install, :upgrade ]
 end
