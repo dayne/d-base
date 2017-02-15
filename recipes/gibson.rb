@@ -6,7 +6,7 @@ include_recipe 'd-base::default'
 node.default['chef_client']['init_style'] = 'systemd'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
-              vim mumble awscli giggle gitg weechat)
+              vim mumble awscli giggle gitg weechat unity-tweak-tool)
 package packages
 
 include_recipe 'minecraft-installer-ubuntu'
