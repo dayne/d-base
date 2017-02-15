@@ -17,7 +17,8 @@ describe port(80) do
   skip 'This is an example test, replace with your own test.'
 end
 
-%w(vagrant vim tilda mumble atom chromium-browser gitkraken weechat).each do |pkg|
+%w(vagrant vim tilda mumble atom chromium-browser
+  gitkraken weechat unity-tweak-tool).each do |pkg|
   describe package(pkg) do
     it { should be_installed }
   end
