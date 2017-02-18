@@ -24,3 +24,12 @@ atom_apm 'atom-terminal'
 atom_apm 'zen'
 atom_apm 'vim-mode-plus'
 atom_apm 'atom-beautify'
+
+# docker
+docker_installation 'default' do
+    action :create
+end
+
+docker_service 'default' do
+  action [:create, :start]
+end
