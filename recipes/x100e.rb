@@ -4,8 +4,10 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-packages = %w(i3 zram-config epiphany)
+packages = %w(i3 feh conky-all dmenu i3status zram-config epiphany glances terminator)
 
 package packages
 
 include_recipe "d-base::default"
+
+include_recipe 'minecraft-installer-ubuntu'
