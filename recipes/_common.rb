@@ -16,3 +16,9 @@ apt_update 'system' do
 end if debian?
 
 include_recipe 'packages'
+
+replace_or_add 'xkboptions = nocaps' do
+  path '/etc/default/keyboard'
+  pattern 'XKBOPTIONS'
+  line 'XKBOPTIONS=ctrl:nocaps'
+end
