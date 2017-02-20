@@ -5,7 +5,7 @@
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 packages = %w(i3 feh conky-all dmenu i3status zram-config epiphany glances 
-              terminator zram-config)
+              terminator)
 
 package packages
 
