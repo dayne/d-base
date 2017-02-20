@@ -14,15 +14,17 @@ package packages
 
 if File.directory?('/home/dayne')
 
-directory('/home/dayne/.config/i3') do
-  owner 'dayne'
-  group 'dayne'
-  mode 0755
-  recursive true
-end
+  directory('/home/dayne/.config/i3') do
+    owner 'dayne'
+    group 'dayne'
+    mode 0755
+    recursive true
+  end
 
-file('/home/dayne/.config/i3/config')
-  source 'i3-config'
-  owner 'dayne'
-  group 'dayne'
+  cookbook_file('/home/dayne/.config/i3/config') do
+    source 'i3-config'
+    owner 'dayne'
+    group 'dayne'
+  end
+
 end

@@ -8,7 +8,6 @@ default['packages-cookbook'] = [
   'curl',
   'tree',
   'tmux',
-  'mplayer',
   'git-core',
 ]
 

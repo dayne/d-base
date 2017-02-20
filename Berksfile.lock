@@ -37,7 +37,7 @@ GRAPH
   chef-sugar (3.4.0)
   compat_resource (12.16.3)
   cron (3.0.0)
-  d-base (0.4.12)
+  d-base (0.4.14)
     apt (~> 5.0)
     atom (~> 0.2.0)
     bash-CVE-2014-6271 (>= 0.0.0)
