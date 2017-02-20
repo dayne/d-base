@@ -4,10 +4,12 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-packages = %w(i3 feh conky-all dmenu i3status zram-config epiphany glances terminator)
+packages = %w(i3 feh conky-all dmenu i3status zram-config epiphany glances 
+              terminator zram-config)
 
 package packages
 
 include_recipe "d-base::default"
 
-include_recipe 'minecraft-installer-ubuntu'
+# x100e too slow for minecraft - removed
+# include_recipe 'minecraft-installer-ubuntu'
