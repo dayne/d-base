@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.15'
+version '0.4.17'
 
 depends 'chef-client', '~> 7.1'
 depends 'resolver', '~> 2.0'
@@ -38,3 +38,5 @@ depends 'docker', '~> 2.15'
 
 depends 'ruby_install', '~> 1.1.0'      # special branch
 depends 'chruby_install', '~> 0.1.3'    # special branch
+
+depends 'n1nj4-users'
