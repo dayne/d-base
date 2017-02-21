@@ -46,7 +46,7 @@ GRAPH
     build-essential (>= 0.0.0)
   compat_resource (12.16.3)
   cron (3.0.0)
-  d-base (0.4.16)
+  d-base (0.4.18)
     apt (~> 5.0)
     atom (~> 0.2.0)
     bash-CVE-2014-6271 (>= 0.0.0)
