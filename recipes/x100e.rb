@@ -11,5 +11,7 @@ package packages
 
 include_recipe "d-base::default"
 
+include_recipe "n1nj4-users::home"
+
 # x100e too slow for minecraft - removed
 # include_recipe 'minecraft-installer-ubuntu'

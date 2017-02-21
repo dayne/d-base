@@ -1,8 +1,6 @@
 # gibson's run list from d-base should just be this recipe.
 include_recipe 'd-base::default'
 
-# include_recipe 'd-base::home'
-
 node.default['chef_client']['init_style'] = 'systemd'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
