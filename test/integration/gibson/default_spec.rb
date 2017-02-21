@@ -64,3 +64,9 @@ end
 describe file('/usr/share/minecraft/minecraft.jar') do
   it { should exist }
 end
+
+describe command('/usr/local/bin/ruby-install') do
+    its('exit_status') { should eq 0 }
+    its('stdout') { should match '0.6.1' }
+    its('stderr') { should match '' }
+end

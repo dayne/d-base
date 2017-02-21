@@ -36,3 +36,5 @@ docker_service 'default' do
 end
 
 include_recipe 'd-base::_i3'
+
+include_recipe 'd-base::_ruby'

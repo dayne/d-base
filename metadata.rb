@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.14'
+version '0.4.15'
 
 depends 'chef-client', '~> 7.1'
 depends 'resolver', '~> 2.0'
@@ -38,3 +38,6 @@ depends 'minecraft-installer-ubuntu', '~> 0.3.0'
 #depends 'sudo'
 
 depends 'docker', '~> 2.15'
+
+depends 'ruby_install', '~> 1.1.0'
+depends 'chruby_install', '~> 0.1.3'
