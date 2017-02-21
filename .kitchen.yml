@@ -30,6 +30,5 @@ suites:
   - name: chefdk
     run_list:
       - recipe[d-base::chefdk]
-      - recipe[d-base::_ruby]
     excludes:
       - debian-8.5
