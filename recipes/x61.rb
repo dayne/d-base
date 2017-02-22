@@ -8,7 +8,7 @@ packages = %w( chromium-browser )
 
 package packages
 
-user_manage "julie" do
+user "julie" do
   action [ :create ]
 end
 
