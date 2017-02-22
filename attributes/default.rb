@@ -9,6 +9,7 @@ default['packages-cookbook'] = [
   'tree',
   'tmux',
   'git-core',
+  'htop'
 ]
 
 default['system']['timezone'] = 'America/Anchorage'

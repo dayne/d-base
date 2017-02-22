@@ -32,3 +32,8 @@ suites:
       - recipe[d-base::chefdk]
     excludes:
       - debian-8.5
+  - name: laptops
+    run_list:
+      - recipe[d-base::x61]
+    excludes:
+      - debian-8.5

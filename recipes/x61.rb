@@ -15,3 +15,11 @@ end
 include_recipe "d-base::default"
 
 include_recipe 'minecraft-installer-ubuntu'
+
+remote_file '/usr/share/icons/minecraft.svg' do
+  source 'http://images.wikia.com/yogbox/images/d/dd/Minecraft_Block.svg'
+  owner 'root'
+  group 'root'
+  mode 0644
+  action :create
+end
