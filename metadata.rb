@@ -40,3 +40,5 @@ depends 'ruby_install', '~> 1.1.0'      # special branch
 depends 'chruby_install', '~> 0.1.3'    # special branch
 
 depends 'n1nj4-users'
+
+depends 'glances'

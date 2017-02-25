@@ -22,3 +22,5 @@ replace_or_add 'xkboptions = nocaps' do
   pattern 'XKBOPTIONS'
   line 'XKBOPTIONS=ctrl:nocaps'
 end
+
+include_recipe 'glances'

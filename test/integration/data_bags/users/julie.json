@@ -1,0 +1,5 @@
+{
+    "id": "julie",
+    "groups": [ "sysadmin", "home" ],
+    "ssh_keys": ["julie-ssh-key"]
+}

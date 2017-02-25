@@ -16,7 +16,8 @@ package packages
 # the groups that make using ubuntu laptop easy -- without polluting
 # databags and recipes with silly logic like this
 users_manage "julie" do
-  action [ :create, :manage ]
+  action [ :create ]
+  only_if { not vagrant? }
 end
 
 include_recipe "d-base::default"
