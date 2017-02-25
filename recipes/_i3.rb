@@ -4,7 +4,7 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-packages = %w(i3 feh terminator conky)
+packages = %w(i3 feh terminator conky gnome-settings-daemon)
 package packages
 
 # how could I wrap this with a thing like

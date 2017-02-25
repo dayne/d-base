@@ -159,3 +159,4 @@ bar {
 }
 
 exec --no-startup-id feh --bg-scale $HOME/Pictures/wallpaper.jpg
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
