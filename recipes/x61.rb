@@ -4,12 +4,19 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+
+include_recipe 'users'
+
 packages = %w( chromium-browser )
 
 package packages
 
-user "julie" do
-  action [ :create ]
+# TODO find a bit better way of doing this.
+# need to give 'users' on specific machines easy sudo access and all
+# the groups that make using ubuntu laptop easy -- without polluting
+# databags and recipes with silly logic like this
+users_manage "julie" do
+  action [ :create, :manage ]
 end
 
 include_recipe "d-base::default"
