@@ -5,7 +5,7 @@ node.default['chef_client']['init_style'] = 'systemd'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
               vim mumble awscli giggle gitg weechat unity-tweak-tool
-              deluge mplayer)
+              deluge mplayer tmate nmap)
 package packages
 
 include_recipe 'minecraft-installer-ubuntu'
@@ -26,7 +26,7 @@ atom_apm 'atom-beautify'
 
 # docker
 docker_installation 'default' do
-    action :create
+  action :create
 end
 
 docker_service 'default' do
@@ -36,3 +36,5 @@ end
 include_recipe 'd-base::_i3'
 
 include_recipe 'd-base::_ruby'
+
+#include_recipe 'glances'
