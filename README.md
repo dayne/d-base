@@ -34,7 +34,7 @@ Three test suites defined for test kitchen: `gibson` and `pi`.
 * `pi` is a basic sanity checker pi related stuff using debian instead of Ubuntu.
 * `chefdk` focuses on the chefdk stack is converging and verifying cleanly. A bit quicker than gibson to converge.
 
-[Inspec](inspec.io) tests try to [verify](/dayne/d-base/tree/master/test/integration) the bulk of actions done. If you've got a sane chef development workstation (see `chefdk` recipe in this repo) - then you can sanity check things converge and verify by doing:
+[Inspec](http://inspec.io) tests try to [verify](https://github.com/dayne/d-base/tree/master/test/integration) the bulk of actions done. If you've got a sane chef development workstation (see `chefdk` recipe in this repo) - then you can sanity check things converge and verify by doing:
 
 ```
     kitchen converge
