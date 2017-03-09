@@ -66,12 +66,20 @@ describe file('/usr/share/minecraft/minecraft.jar') do
 end
 
 describe command('/usr/local/bin/ruby-install') do
-    its('stderr') { should match '' }
+  its('stderr') { should match '' }
 end
 
-describe command('/usr/local/bin/chruby') do
-    its('exit_status') { should eq 0 }
-    its('stdout') { should match '0.3.9' }
-    its('stderr') { should match '' }
+describe file('/usr/local/share/chruby/chruby.sh') do
+  it { should exist }
+  its('content') { should match '0.3.9' }
 end
 
+describe file('/etc/profile.d/chruby.sh') do
+  it { should exist }
+end
+
+describe command('vagrant --version') do
+  its('exit_status') { should eq 0 }
+  its('stdout') { should match '1.9.2' }
+  its('stderr') { should match '' }
+end
