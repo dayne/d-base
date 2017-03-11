@@ -25,4 +25,4 @@ hab_install 'install habitat'
 
 include_recipe 'terraform'
 
-#TODO: packer
+include_recipe 'sbp_packer'

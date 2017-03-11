@@ -83,3 +83,8 @@ describe command('vagrant --version') do
   its('stdout') { should match '1.9.2' }
   its('stderr') { should match '' }
 end
+
+describe command('packer --version') do
+  its('exit_status') { should eq 1 }
+  its('stdout') { should match '0.12.2' }
+end
