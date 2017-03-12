@@ -19,15 +19,7 @@ depends 'bash-CVE-2014-6271'
 
 depends 'system', '~> 0.11.2'
 
-# chefdk related
-depends 'chef-dk', '~> 3.1.0'
-depends 'atom', '~> 0.2.0'
-depends 'vagrant'
-depends 'habitat', '~> 0.2.0'
-depends 'sbp_packer'
-# note: following have special branches to work - See Berksfile
-depends 'virtualbox', '~> 2.0'          # special branch
-depends 'terraform', '~> 1.0'           # special branch
+depends 'd_devbox'
 
 # misc for gibson
 depends 'steam', '~> 2.2.1'             # special branch

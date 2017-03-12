@@ -5,13 +5,6 @@
 d-base has the following recipes:
 
 * `dbase::default` - basic stuff - nothing special
-* `dbase::chefdk` - makes an ubuntu system into a chef development workstation
-  * [chefdk](https://downloads.chef.io/chefdk) - via [chef-dk cookbook](https://supermarket.chef.io/cookbooks/chef-dk)
-  * [Atom Editor](https://atom.io) - via [atom cookbook](https://supermarket.chef.io/cookbooks/atom) with file-watcher and file-icons
-  * [VirtualBox-5.1](https://www.virtualbox.org/) - via [_my own branch_](https://github.com/dayne/virtualbox-cookbook/tree/51update) of [virtualbox cookbook](https://supermarket.chef.io/cookbooks/virtualbox)
-  * [vagrant](https://www.vagrantup.com/) - via [vagrant cookbook](https://supermarket.chef.io/cookbooks/vagrant) with winrm plugin
-  * [habitat](https://www.habitat.sh/)
-  * [terraform](https://www.terraform.io/) - via [_my own branch_](https://github.com/dayne/chef-terraform/tree/zipfile_fix) of the [terraform cookbook](https://github.com/rosstimson/chef-terraform)
 * `dbase::gibson`
   * Includes the above `default` and `chefdk` recipes
   * [Steam](http://store.steampowered.com/) - for the gaming
