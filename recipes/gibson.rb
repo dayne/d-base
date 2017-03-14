@@ -5,8 +5,10 @@ node.default['chef_client']['init_style'] = 'systemd'
 
 packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
               vim mumble awscli giggle gitg weechat unity-tweak-tool
-              deluge mplayer tmate nmap)
+              deluge mplayer tmate )
+packages.push %w( iftop iotop atop nmap )
 package packages
+
 
 include_recipe 'minecraft-installer-ubuntu'
 
