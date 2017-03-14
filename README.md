@@ -6,7 +6,8 @@ d-base has the following recipes:
 
 * `dbase::default` - basic stuff - nothing special
 * `dbase::gibson`
-  * Includes the above `default` and `chefdk` recipes
+  * Includes the above `default`
+  * [d_devbox](https://github.com/dayne/d_devbox) - installs Chefdk, VirtualBox, Vagrant, Packer, Habitat, and other devops tools
   * [Steam](http://store.steampowered.com/) - for the gaming
   * [QGIS](http://qgis.org) - via my own [qgis-cookbook](https://github.com/dayne/qgis-cookbook) for the geospatial viewing goody that is QGIS.
   * [minecraft](http://minecraft.net) - via the [minecraft-installer-ubuntu cookbook](https://supermarket.chef.io/cookbooks/minecraft-installer-ubuntu) for the diamonds and creepers
