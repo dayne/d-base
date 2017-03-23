@@ -6,25 +6,3 @@
 
 packages = %w(i3 feh terminator conky gnome-settings-daemon)
 package packages
-
-# how could I wrap this with a thing like
-# node['workstation_users']
-# followed by check to see if they are on systemd
-# and have a 'wm' = 'i3' flag set on their user
-
-if File.directory?('/home/dayne')
-
-  directory('/home/dayne/.config/i3') do
-    owner 'dayne'
-    group 'dayne'
-    mode 0755
-    recursive true
-  end
-
-  cookbook_file('/home/dayne/.config/i3/config') do
-    source 'i3-config'
-    owner 'dayne'
-    group 'dayne'
-  end
-
-end
