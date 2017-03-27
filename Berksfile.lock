@@ -7,7 +7,7 @@ DEPENDENCIES
     metadata: true
   d_devbox
     git: https://github.com/dayne/d_devbox.git
-    revision: 496989efacf8cbd0d6ae335d8436bd9a592c683b
+    revision: aa8abb67940f4b55360bc32db5226bab8cc1b48a
   ruby_install
     git: https://github.com/dayne/chef-ruby_install.git
     revision: 19e9757a7ab4645dceab60d192311af6cb9378b7
@@ -57,7 +57,7 @@ GRAPH
     build-essential (>= 0.0.0)
   compat_resource (12.16.3)
   cron (4.0.0)
-  d-base (0.4.30)
+  d-base (0.4.31)
     apt (~> 5.0)
     bash-CVE-2014-6271 (>= 0.0.0)
     bash-CVE-2014-7169 (>= 0.0.0)
@@ -76,7 +76,7 @@ GRAPH
     ruby_install (~> 1.1.0)
     steam (~> 2.2.1)
     system (~> 0.11.2)
-  d_devbox (0.1.4)
+  d_devbox (0.1.6)
     atom (~> 0.2.0)
     chef-dk (~> 3.1.1)
     habitat (~> 0.2.0)
