@@ -3,9 +3,10 @@ include_recipe 'd-base::default'
 
 node.default['chef_client']['init_style'] = 'systemd'
 
-packages = %w(build-essential chromium-browser tilda zsh zsh-antigen
-              vim mumble awscli giggle gitg weechat unity-tweak-tool
+packages = %w(chromium-browser tilda zsh zsh-antigen
+              mumble giggle gitg weechat unity-tweak-tool
               deluge mplayer tmate )
+packages.push %w( sshfs build-essential vim awscli tmate )  # candidates for moving over to d_devbox (ubuntu only)
 packages.push %w( iftop iotop atop nmap )
 package packages
 
