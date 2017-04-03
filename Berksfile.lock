@@ -7,7 +7,7 @@ DEPENDENCIES
     metadata: true
   d_devbox
     git: https://github.com/dayne/d_devbox.git
-    revision: aa8abb67940f4b55360bc32db5226bab8cc1b48a
+    revision: 0e56f3050e7d15fccc86bbfec7f71c8f6bc5bb34
   ruby_install
     git: https://github.com/dayne/chef-ruby_install.git
     revision: 19e9757a7ab4645dceab60d192311af6cb9378b7
@@ -18,8 +18,7 @@ DEPENDENCIES
     branch: update_apt
   virtualbox
     git: https://github.com/dayne/virtualbox-cookbook.git
-    revision: 5b2738ffded2f4963889b0a9b234ac648b150880
-    branch: p5_1_16
+    revision: 5f25e175180126d7b26395963b253399b721868a
 
 GRAPH
   apache2 (3.2.2)
@@ -57,7 +56,7 @@ GRAPH
     build-essential (>= 0.0.0)
   compat_resource (12.16.3)
   cron (4.0.0)
-  d-base (0.4.33)
+  d-base (0.4.34)
     apt (~> 5.0)
     bash-CVE-2014-6271 (>= 0.0.0)
     bash-CVE-2014-7169 (>= 0.0.0)
@@ -105,7 +104,7 @@ GRAPH
   openssh (2.1.1)
     iptables (>= 1.0)
   packages (1.0.0)
-  qgis (0.3.0)
+  qgis (0.3.1)
     apt (>= 0.0.0)
   resolver (2.0.1)
   ruby_install (1.1.0)
@@ -134,7 +133,7 @@ GRAPH
   vagrant (0.7.0)
     dmg (>= 2.2.2)
     windows (>= 1.38)
-  virtualbox (2.0.2)
+  virtualbox (2.0.3)
     apache2 (>= 0.0.0)
     apt (>= 0.0.0)
     dmg (>= 0.0.0)
