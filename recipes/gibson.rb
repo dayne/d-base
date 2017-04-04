@@ -44,3 +44,5 @@ include_recipe 'd-base::_i3'
 include_recipe 'd-base::_ruby'
 
 #include_recipe 'glances'
+
+include_recipe 'nodejs'
