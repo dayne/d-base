@@ -12,4 +12,4 @@ cookbook 'steam', git: 'https://github.com/dayne/steam-chef.git', branch: 'updat
 cookbook 'ruby_install', git: 'https://github.com/dayne/chef-ruby_install.git', branch: 'patch-2'
 cookbook 'chruby_install', git: 'https://github.com/dayne/chef_chruby_install.git'
 
-cookbook 'd_devbox', git: 'https://github.com/dayne/d_devbox.git'
+#cookbook 'd_devbox', git: 'https://github.com/dayne/d_devbox.git'

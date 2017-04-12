@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.35'
+version '0.4.36'
 
 depends 'chef-client', '~> 7.1'
 depends 'resolver', '~> 2.0'
@@ -19,7 +19,7 @@ depends 'bash-CVE-2014-6271'
 
 depends 'system', '~> 0.11.2'
 
-depends 'd_devbox', '~> 0.1.2'
+depends 'd_devbox'
 
 # misc for gibson
 depends 'steam', '~> 2.2.1'             # special branch
