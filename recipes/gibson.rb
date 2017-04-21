@@ -45,4 +45,9 @@ include_recipe 'd-base::_ruby'
 
 #include_recipe 'glances'
 
-include_recipe 'nodejs'
+# include_recipe 'nodejs'
+
+apt_repository  'node.js' do
+  #uri 'https://deb.nodesource.com/node'
+  action :remove 
+end

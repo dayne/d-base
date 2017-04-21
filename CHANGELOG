@@ -1,9 +1,10 @@
-# 0.4.36 - 2017-04-12
+## 0.4.37 - 2017-04-21
+* remove nodejs from Gibson because it doesn't gracefully support 16.10
 
+## 0.4.36 - 2017-04-12
 * updated d_devbox to allow new chefdk to roll in
 * fix packer tests/verify
 
-# 0.4.35 - 2017-04-12
-
+## 0.4.35 - 2017-04-12
 * gitkraken v2.3.3
 * moreutils & ufraw

@@ -18,7 +18,6 @@ describe port(80) do
 end
 
 %w(vagrant vim tilda mumble atom chromium-browser scudcloud
-  nodejs
   gitkraken weechat unity-tweak-tool deluge i3).each do |pkg|
   describe package(pkg) do
     it { should be_installed }

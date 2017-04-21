@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.36'
+version '0.4.37'
 
 depends 'chef-client', '~> 7.1'
 depends 'resolver', '~> 2.0'
@@ -33,5 +33,4 @@ depends 'chruby_install', '~> 0.1.3'    # special branch
 
 depends 'n1nj4-users'
 
-#
-depends 'nodejs', '~> 3.0.0'
+depends 'nodejs', '>= 3.0.0'
