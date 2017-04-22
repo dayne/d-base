@@ -1,3 +1,6 @@
+## 0.4.38 - 2017-04-22
+* adding hugo
+
 ## 0.4.37 - 2017-04-21
 * remove nodejs from Gibson because it doesn't gracefully support 16.10
 
