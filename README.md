@@ -14,12 +14,13 @@ d-base has the following recipes:
   * [gitkraken](https://www.gitkraken.com/) - Git GUI - via manual .deb install in the [`_gitkraken.rb`](/dayne/d-base/blob/master/recipes/_gitkraken.rb) recipe
   * [chruby](https://github.com/postmodern/chruby/) and [ruby-build](https://github.com/rbenv/ruby-build) so users can select their own [ruby](http://ruby-lang.org/)
   * [docker](https://www.docker.com/) - via the official [docker cookbook](https://supermarket.chef.io/cookbooks/docker)
-  * [i3] tiling window manager - because _why not?_
+  * [i3wm](http://i3wm.org) - a tiling window manager that I decided to embrace for my Linux systems
   * misc other packages and tweaks for Gibson
 * `dbase::pi`
   * tweaks to all pi's in my life
     * US Keyboard layout instead of UK
     * capslock becomes control key
+  * this will be pulled out in the future to a more `pi` targeted repo.
 
 #### Test Kitchen
 
