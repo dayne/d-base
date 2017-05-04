@@ -7,7 +7,7 @@ packages = %w(chromium-browser tilda zsh zsh-antigen
               mumble giggle gitg weechat unity-tweak-tool
               deluge mplayer tmate )
 packages.push %w( sshfs build-essential vim awscli tmate )  # candidates for moving over to d_devbox (ubuntu only)
-packages.push %w( iftop iotop atop nmap )
+packages.push %w( iftop iotop atop nmap ncdu )
 packages.push %w( inkscape gimp )
 packages.push %w( warzone2100 shutter )
 package packages
