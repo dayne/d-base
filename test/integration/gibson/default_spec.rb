@@ -88,3 +88,8 @@ describe command('packer --version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match '1.0.0' }
 end
+
+describe command('hugo version') do
+  its('exit_status') { should eq 0 }
+  its('stdout') { should match 'Hugo Static Site Generator' }
+end

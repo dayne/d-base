@@ -8,7 +8,7 @@ packages = %w(chromium-browser tilda zsh zsh-antigen
               deluge mplayer tmate )
 packages.push %w( sshfs build-essential vim awscli tmate )  # candidates for moving over to d_devbox (ubuntu only)
 packages.push %w( iftop iotop atop nmap )
-packages.push %w( inkscape gimp hugo )
+packages.push %w( inkscape gimp )
 packages.push %w( warzone2100 shutter )
 package packages
 
@@ -51,3 +51,5 @@ apt_repository  'node.js' do
   #uri 'https://deb.nodesource.com/node'
   action :remove 
 end
+
+include_recipe 'd-base::_hugo'
