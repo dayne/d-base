@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.41'
+version '0.4.42'
 
 depends 'chef-client'
 depends 'resolver'
@@ -14,6 +14,7 @@ depends 'line'
 depends 'packages'
 depends 'openssh'
 
+
 depends 'bash-CVE-2014-7169'
 depends 'bash-CVE-2014-6271'
 
@@ -22,8 +23,8 @@ depends 'system'
 depends 'd_devbox'
 
 # misc for gibson
-depends 'steam', '~> 2.2.1'             # special branch
-depends 'qgis', '~> 0.3.0'
+#
+depends 'qgis'
 depends 'minecraft-installer-ubuntu', '~> 0.3.0'
 
 depends 'docker'
@@ -34,3 +35,4 @@ depends 'chruby_install', '~> 0.1.3'    # special branch
 depends 'n1nj4-users'
 
 depends 'nodejs'
+depends 'steam', '~> 2.2.1'             # special branch
