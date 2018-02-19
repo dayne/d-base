@@ -1,20 +1,23 @@
-## 0.4.42 - 2018-02-04
-* relax deps and point to custom repos for chef13 compatibility
+## [0.4.43] - 2018-02-18
+- add `_etcher` recipe to install apt repo and install etch
 
-## 0.4.41 - 2017-05-03
-* update d_devbox to latest gitkrake
-* added ncdu
+## [0.4.42] - 2018-02-04
+- relax deps and point to custom repos for chef13 compatibility
+
+## [0.4.41] - 2017-05-03
+- update d_devbox to latest gitkrake
+- added ncdu
 
 ## 0.4.38 - 2017-04-22
-* adding hugo
+- adding hugo
 
 ## 0.4.37 - 2017-04-21
-* remove nodejs from Gibson because it doesn't gracefully support 16.10
+- remove nodejs from Gibson because it doesn't gracefully support 16.10
 
 ## 0.4.36 - 2017-04-12
-* updated d_devbox to allow new chefdk to roll in
-* fix packer tests/verify
+- updated d_devbox to allow new chefdk to roll in
+- fix packer tests/verify
 
 ## 0.4.35 - 2017-04-12
-* gitkraken v2.3.3
-* moreutils & ufraw
+- gitkraken v2.3.3
+- moreutils & ufraw

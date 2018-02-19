@@ -53,3 +53,5 @@ apt_repository  'node.js' do
 end
 
 include_recipe 'd-base::_hugo'
+
+include_recipe 'd-base::_etcher'

@@ -93,3 +93,7 @@ describe command('hugo version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match 'Hugo Static Site Generator' }
 end
+
+describe package('etcher') do
+  it { should be_installed }
+end

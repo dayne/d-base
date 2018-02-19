@@ -52,7 +52,7 @@ GRAPH
   chruby_install (0.1.4)
     build-essential (>= 0.0.0)
   cron (5.0.1)
-  d-base (0.4.42)
+  d-base (0.4.43)
     apt (>= 0.0.0)
     bash-CVE-2014-6271 (>= 0.0.0)
     bash-CVE-2014-7169 (>= 0.0.0)
