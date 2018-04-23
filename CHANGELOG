@@ -1,3 +1,6 @@
+## [0.4.44] - 2018-04-23
+- upgrade to hugo 0.40
+
 ## [0.4.43] - 2018-02-18
 - add `_etcher` recipe to install apt repo and install etch
 
