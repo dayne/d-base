@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'MIT'
 description 'Installs/Configures d-base'
 long_description 'Installs/Configures d-base'
-version '0.4.44'
+version '0.5.0'
 
 depends 'chef-client'
 depends 'resolver'
@@ -25,7 +25,6 @@ depends 'd_devbox'
 # misc for gibson
 #
 depends 'qgis'
-depends 'minecraft-installer-ubuntu', '~> 0.3.0'
 
 depends 'docker'
 

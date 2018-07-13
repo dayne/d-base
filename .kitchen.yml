@@ -7,35 +7,14 @@ verifier:
 
 provisioner:
   name: chef_zero
-#  require_chef_omnibus: 12.19.36
 
 platforms:
   - name: ubuntu-16.04
-  - name: debian-9
-#  - name: centos-7.1
 
 suites:
   - name: gibson
     run_list:
       - recipe[d-base::gibson]
-    excludes:
-      - debian-9
-    attributes:
-  - name: pi
-    run_list:
-      - recipe[d-base::default]
-      - recipe[d-base::pi]
-    attributes:
-    excludes:
-      - ubuntu-16.04
   - name: laptops
     run_list:
       - recipe[d-base::x61]
-    excludes:
-      - debian-9
-  - name: basic_test
-    run_list:
-      - recipe[d-base::_etcher]
-    excludes:
-      - debian-9
-    attributes:

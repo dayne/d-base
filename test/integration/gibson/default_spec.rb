@@ -18,7 +18,7 @@ describe port(80) do
 end
 
 %w(vagrant vim tilda mumble atom chromium-browser scudcloud
-  gitkraken weechat unity-tweak-tool deluge i3 hugo ).each do |pkg|
+  weechat unity-tweak-tool deluge i3 hugo ).each do |pkg|
   describe package(pkg) do
     it { should be_installed }
   end
@@ -40,7 +40,7 @@ describe command('hab --version') do
   its('stderr') { should eq '' }
 end
 
-describe package('VirtualBox-5.1') do
+describe package('VirtualBox-5.2') do
   it { should be_installed }
 end
 
@@ -61,10 +61,6 @@ describe package('qgis') do
   its('version') { should be >= '1:2.18' }
 end
 
-describe file('/usr/share/minecraft/minecraft.jar') do
-  it { should exist }
-end
-
 describe command('/usr/local/bin/ruby-install') do
   its('stderr') { should match '' }
 end
@@ -80,7 +76,7 @@ end
 
 describe command('vagrant --version') do
   its('exit_status') { should eq 0 }
-  its('stdout') { should match '1.9.3' }
+  its('stdout') { should match '2.0.2' }
   its('stderr') { should match '' }
 end
 
@@ -92,8 +88,4 @@ end
 describe command('hugo version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match 'Hugo Static Site Generator' }
-end
-
-describe package('etcher') do
-  it { should be_installed }
 end

@@ -1,3 +1,8 @@
+## [0.5.0] - 2018-07-12
+- remove gitkraken and minecraft from gibson
+- clean up builds to be just gibson and laptops (remove pi & basic)
+- update d_devbox for virtualbox 5.2
+
 ## [0.4.44] - 2018-04-23
 - upgrade to hugo 0.40
 

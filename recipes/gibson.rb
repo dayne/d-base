@@ -14,11 +14,7 @@ package packages
 
 include_recipe 'd-base::_scudcloud'
 
-include_recipe 'minecraft-installer-ubuntu'
-
 include_recipe 'd_devbox'
-
-include_recipe 'd-base::_gitkraken'
 
 include_recipe 'qgis'
 
