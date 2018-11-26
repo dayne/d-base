@@ -51,3 +51,20 @@ end
 include_recipe 'd-base::_hugo'
 
 include_recipe 'd-base::_etcher'
+
+directory '/etc/lightdm/lightdm.conf.d' do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  recursive true
+  action :create
+end
+
+template '/etc/lightdm/lightdm.conf.d/12-auto-login-dayne.conf' do
+  source 'lightdm-auto_login.conf.erb'
+  owner 'root'
+  group 'root'
+  mode 0755
+
+  action [ :create_if_missing ]
+end

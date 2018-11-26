@@ -3,56 +3,39 @@ DEPENDENCIES
     git: git@github.com:dayne/chef-atom.git
     revision: 86b6eda6ce9c22a3ea5ee7e1e191bc5bc7423a21
     branch: relaxhomebrew
-  chruby_install
-    git: git@github.com:dayne/chef_chruby_install
-    revision: 208b96304a632cbef332de921a071fcc942b2fb9
-    branch: chef13_and_tests
   d-base
     path: .
     metadata: true
   d_devbox
     git: https://github.com/dayne/d_devbox.git
-    revision: d9671b0dc567f5756be095ffcacc86d472f04bb1
-  ruby_install
-    git: https://github.com/dayne/chef-ruby_install.git
-    revision: 19e9757a7ab4645dceab60d192311af6cb9378b7
-    branch: patch-2
+    revision: 3c50b03ad186335cc58eb7366cd329051d25b147
   steam
     git: https://github.com/dayne/steam-chef.git
     revision: e50f177c2bccc6acb0079f59f600481cf5e8806b
     branch: update_apt
-  terraform
-    git: https://github.com/dayne/chef-terraform
-    revision: 82f1ac3b35945dd3d49d7dd2a29c6e7de9e93119
-    branch: chef13
-  virtualbox
-    git: https://github.com/dayne/virtualbox-cookbook.git
-    revision: 3a9b8681d3d3bee06d710cd5a75a4c065e194d21
 
 GRAPH
-  apache2 (5.0.1)
-  apt (7.0.0)
-  ark (3.1.0)
+  apache2 (5.2.1)
+  apt (7.1.1)
+  ark (3.1.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
-    windows (>= 0.0.0)
   atom (0.2.2)
     apt (> 3.0)
     homebrew (< 5.0.0)
   bash-CVE-2014-6271 (0.1.1)
   bash-CVE-2014-7169 (0.1.0)
-  build-essential (8.1.1)
+  build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-client (10.1.0)
+  chef-client (11.0.3)
     cron (>= 4.2.0)
     logrotate (>= 1.9.0)
-    windows (>= 2.0.0)
-  chef-sugar (4.0.0)
+  chef-sugar (4.1.0)
   chruby_install (0.1.4)
     build-essential (>= 0.0.0)
-  cron (6.1.1)
-  d-base (0.5.0)
+  cron (6.2.1)
+  d-base (0.6.0)
     apt (>= 0.0.0)
     bash-CVE-2014-6271 (>= 0.0.0)
     bash-CVE-2014-7169 (>= 0.0.0)
@@ -71,57 +54,53 @@ GRAPH
     ruby_install (~> 1.1.0)
     steam (~> 2.2.1)
     system (>= 0.0.0)
-  d_devbox (0.2.0)
+  d_devbox (0.3.0)
     apt (>= 0.0.0)
     atom (>= 0.2.0)
     docker (>= 2.15.25)
     habitat (>= 0.3.0)
-    terraform (>= 1.0.1)
     vagrant (>= 0.7.0)
     virtualbox (>= 2.1)
   dmg (4.1.1)
-  docker (4.3.0)
-  habitat (0.57.0)
+  docker (4.6.7)
+  habitat (0.67.0)
   homebrew (4.3.0)
   hostsfile (3.0.1)
-  iptables (4.3.4)
-  line (2.0.2)
+  iptables (4.5.0)
+  line (2.1.1)
   logrotate (2.2.0)
-  mingw (2.0.2)
+  mingw (2.1.0)
     seven_zip (>= 0.0.0)
   n1nj4-users (0.4.0)
     sudo (>= 0.0.0)
     user (>= 0.0.0)
     users (>= 0.0.0)
-  nodejs (5.0.0)
+  nodejs (6.0.0)
     ark (>= 2.0.2)
-    build-essential (>= 0.0.0)
-  openssh (2.6.3)
+    build-essential (>= 5.0)
+  openssh (2.7.1)
     iptables (>= 1.0)
   packages (1.1.0)
   qgis (0.3.2)
     apt (>= 0.0.0)
-  resolver (2.0.1)
+  resolver (2.1.0)
   ruby_install (1.1.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     yum (>= 0.0.0)
-  seven_zip (3.0.0)
+  seven_zip (3.1.0)
     windows (>= 0.0.0)
   steam (2.2.4)
     apt (>= 0.0.0)
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
-  sudo (5.4.0)
+  sudo (5.4.4)
   system (0.11.2)
     apt (>= 0.0.0)
     cron (>= 0.0.0)
     hostsfile (>= 0.0.0)
-  terraform (1.0.3)
-    ark (>= 2.0)
-    build-essential (~> 8.0)
   user (0.7.0)
-  users (5.3.1)
+  users (5.4.0)
   vagrant (0.9.1)
     dmg (>= 2.2.2)
   virtualbox (2.1.0)
@@ -130,5 +109,5 @@ GRAPH
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum (> 3.1)
-  windows (4.3.3)
+  windows (5.2.2)
   yum (5.1.0)

@@ -9,12 +9,12 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-16.04
+  - name: ubuntu-18.04
 
 suites:
   - name: gibson
     run_list:
       - recipe[d-base::gibson]
-  - name: laptops
-    run_list:
-      - recipe[d-base::x61]
+#  - name: laptops
+#    run_list:
+#      - recipe[d-base::x61]

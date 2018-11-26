@@ -22,3 +22,8 @@ replace_or_add 'xkboptions = nocaps' do
   pattern 'XKBOPTIONS'
   line 'XKBOPTIONS=ctrl:nocaps'
 end
+
+packages = [ 'smartmontools', 'xfsprogs', 'mdadm', 'gdisk', 'curl', 'tree', 'tmux', 'git', 'htop' ]
+packages.each do |p|
+  package p
+end
