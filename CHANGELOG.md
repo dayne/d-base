@@ -1,3 +1,11 @@
+## [0.6.2] - 2018-12-04
+- remove chruby and ruby\_build deps
+- update n1nj4-users to 0.5.0
+- update d\_devbox to 0.3.1
+
+## [0.6.1] - 2018-12-03
+- rbenv takes over for the \_ruby work
+
 ## [0.6.0] - 2018-11-25
 - test kitchen: ubuntu 16.04 -> 18.04, remove x61 
 - swap out my own branch of virtualbox-cookbook 

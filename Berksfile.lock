@@ -8,7 +8,7 @@ DEPENDENCIES
     metadata: true
   d_devbox
     git: https://github.com/dayne/d_devbox.git
-    revision: 3c50b03ad186335cc58eb7366cd329051d25b147
+    revision: 85f1ac268bb03c405b816a4cfdff5ddac79bb88b
   steam
     git: https://github.com/dayne/steam-chef.git
     revision: e50f177c2bccc6acb0079f59f600481cf5e8806b
@@ -17,7 +17,7 @@ DEPENDENCIES
 GRAPH
   apache2 (5.2.1)
   apt (7.1.1)
-  ark (3.1.1)
+  ark (4.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
   atom (0.2.2)
@@ -32,16 +32,13 @@ GRAPH
     cron (>= 4.2.0)
     logrotate (>= 1.9.0)
   chef-sugar (4.1.0)
-  chruby_install (0.1.4)
-    build-essential (>= 0.0.0)
   cron (6.2.1)
-  d-base (0.6.0)
+  d-base (0.6.2)
     apt (>= 0.0.0)
     bash-CVE-2014-6271 (>= 0.0.0)
     bash-CVE-2014-7169 (>= 0.0.0)
     chef-client (>= 0.0.0)
     chef-sugar (>= 0.0.0)
-    chruby_install (~> 0.1.3)
     d_devbox (>= 0.0.0)
     docker (>= 0.0.0)
     line (>= 0.0.0)
@@ -51,10 +48,10 @@ GRAPH
     packages (>= 0.0.0)
     qgis (>= 0.0.0)
     resolver (>= 0.0.0)
-    ruby_install (~> 1.1.0)
+    ruby_rbenv (>= 0.0.0)
     steam (~> 2.2.1)
     system (>= 0.0.0)
-  d_devbox (0.3.0)
+  d_devbox (0.3.1)
     apt (>= 0.0.0)
     atom (>= 0.2.0)
     docker (>= 2.15.25)
@@ -62,7 +59,7 @@ GRAPH
     vagrant (>= 0.7.0)
     virtualbox (>= 2.1)
   dmg (4.1.1)
-  docker (4.6.7)
+  docker (4.6.8)
   habitat (0.67.0)
   homebrew (4.3.0)
   hostsfile (3.0.1)
@@ -71,9 +68,8 @@ GRAPH
   logrotate (2.2.0)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
-  n1nj4-users (0.4.0)
+  n1nj4-users (0.5.0)
     sudo (>= 0.0.0)
-    user (>= 0.0.0)
     users (>= 0.0.0)
   nodejs (6.0.0)
     ark (>= 2.0.2)
@@ -84,10 +80,7 @@ GRAPH
   qgis (0.3.2)
     apt (>= 0.0.0)
   resolver (2.1.0)
-  ruby_install (1.1.0)
-    apt (>= 0.0.0)
-    ark (>= 0.0.0)
-    yum (>= 0.0.0)
+  ruby_rbenv (2.1.2)
   seven_zip (3.1.0)
     windows (>= 0.0.0)
   steam (2.2.4)
@@ -99,7 +92,6 @@ GRAPH
     apt (>= 0.0.0)
     cron (>= 0.0.0)
     hostsfile (>= 0.0.0)
-  user (0.7.0)
   users (5.4.0)
   vagrant (0.9.1)
     dmg (>= 2.2.2)

@@ -35,18 +35,9 @@ docker_service 'default' do
   action [:create, :start]
 end
 
-include_recipe 'd-base::_i3'
-
 include_recipe 'd-base::_ruby'
 
-#include_recipe 'glances'
-
-# include_recipe 'nodejs'
-
-apt_repository  'node.js' do
-  #uri 'https://deb.nodesource.com/node'
-  action :remove 
-end
+include_recipe 'd-base::_i3'
 
 include_recipe 'd-base::_hugo'
 
@@ -68,3 +59,4 @@ template '/etc/lightdm/lightdm.conf.d/12-auto-login-dayne.conf' do
 
   action [ :create_if_missing ]
 end
+

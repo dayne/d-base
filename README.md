@@ -1,18 +1,19 @@
 # d-base
 
-> `d-base` is a home base cookbook to focus and organize my own personal chef systems. Enjoy at your own risk.
+> `d-base` is a home base cookbook to focus and organize my own personal chef systems. Enjoy at your own risk. 
 
 d-base has the following recipes:
 
 * `dbase::default` - basic stuff - nothing special
-* `dbase::gibson`
+* `dbase::gibson` - Primary goal of this repo.
   * Includes the above `default`
   * [d_devbox](https://github.com/dayne/d_devbox) - installs Chefdk, VirtualBox, Vagrant, Packer, Habitat, and other devops tools
   * [Steam](http://store.steampowered.com/) - for the gaming
   * [QGIS](http://qgis.org) - via my own [qgis-cookbook](https://github.com/dayne/qgis-cookbook) for the geospatial viewing goody that is QGIS.
   * [minecraft](http://minecraft.net) - via the [minecraft-installer-ubuntu cookbook](https://supermarket.chef.io/cookbooks/minecraft-installer-ubuntu) for the diamonds and creepers
   * [gitkraken](https://www.gitkraken.com/) - Git GUI - via manual .deb install in the [`_gitkraken.rb`](/dayne/d-base/blob/master/recipes/_gitkraken.rb) recipe
-  * [chruby](https://github.com/postmodern/chruby/) and [ruby-build](https://github.com/rbenv/ruby-build) so users can select their own [ruby](http://ruby-lang.org/)
+  * [ruby_rbenv](https://github.com/sous-chefs/ruby_rbenv) to provide ruby
+    environments and ruby build.
   * [docker](https://www.docker.com/) - via the official [docker cookbook](https://supermarket.chef.io/cookbooks/docker)
   * [i3wm](http://i3wm.org) - a tiling window manager that I decided to embrace for my Linux systems
   * misc other packages and tweaks for Gibson
